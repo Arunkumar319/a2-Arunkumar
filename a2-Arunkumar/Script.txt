@@ -1,0 +1,127 @@
+let h=document.getElementById("h");
+h.style.textAlign="center";
+h.style.color="red";
+h.style.backgroundColor="blue";
+h.style.border="solid 5px orange";
+
+var btn=document.getElementById("CI");
+var p=document.getElementById("result");
+
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Inches= (num*3.9).toFixed(2)
+    p.innerHTML="Result is "+Inches+"inches";
+    result.style.color="red";
+    
+
+}
+
+
+
+var btn=document.getElementById("IC");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Centi= (num/3.9 ).toFixed(2)
+    p.innerHTML="Result is "+Centi+"cm";
+    result.style.color="blue";
+    
+
+}
+
+var btn=document.getElementById("CM");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Meter=( num/100 ).toFixed(2)
+    p.innerHTML="Result is "+Meter+"m";
+    result.style.color="pink";
+    
+
+}
+
+var btn=document.getElementById("MC");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Centi=( num*100 ).toFixed(2)
+    p.innerHTML="Result is "+Centi+"cm";
+    result.style.color="grey";
+    
+
+}
+
+
+
+var btn=document.getElementById("IM");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Meter= (num/0.025) .toFixed(2)
+    p.innerHTML="Result is "+Meter+"m";
+    result.style.color="yellow";
+    
+
+}
+
+
+
+var btn=document.getElementById("MI");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var Inches= (num*0.025) .toFixed(2)
+    p.innerHTML="Result is "+Inches+"inch";
+    result.style.color="orange";
+    
+
+}
+
+
+
+var btn=document.getElementById("MF");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var feet= (num*3.2) .toFixed(2)
+    p.innerHTML="Result is "+feet+"f";
+    result.style.color="black";
+    
+
+}
+
+
+var btn=document.getElementById("FM");
+var p=document.getElementById("result");
+
+btn.onclick=function()
+{
+    var num=document.getElementById("num").value
+    var meter= (num/3.2 ).toFixed(2)
+    p.innerHTML="Result is "+meter+"m";
+    result.style.color="violet";
+    
+
+}
+
+var clear=document.getElementById("Clear");
+clear.onclick=function()
+{
+    p.innerHTML="  "
+    num.value="  "
+}
+
